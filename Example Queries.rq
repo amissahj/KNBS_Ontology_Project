@@ -1,0 +1,203 @@
+ ## Below are SPARQL queries to answer these possible epidemiological questions 
+
+# Query 1: Which injuries are most common during DustHaze conditions?
+PREFIX rtio: <http://www.example.org/rtio#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?injuryType (COUNT(?injury) AS ?count)
+WHERE {
+  ?accident a rtio:TrafficAccident ;
+            rtio:underCondition rtio:DustHaze .
+
+  ?accident rtio:involvesPerson ?person .
+  ?person rtio:sustainedInjury ?injury .
+  ?injury rtio:hasType ?injuryType .
+}
+GROUP BY ?injuryType
+ORDER BY DESC(?count)
+
+
+# Query 2: What time of day sees the most critical injuries?
+SELECT ?timePeriod ?injuryType (COUNT(?injury) AS ?criticalCount)
+WHERE {
+  ?accident rtio:happenedOn ?time .
+  ?time rdfs:label ?timePeriod .
+
+  ?accident rtio:involvesPerson ?person .
+  ?person rtio:sustainedInjury ?injury .
+  ?injury rtio:hasSeverity "Critical" ;
+          rtio:hasType ?injuryType .
+}
+GROUP BY ?timePeriod ?injuryType
+ORDER BY DESC(?criticalCount)
+
+
+# Query 3: Do rainy season potholes increase internal injuries?
+SELECT ?weather (COUNT(?internalInjury) AS ?internalInjuryCount)
+WHERE {
+  ?accident rtio:underCondition ?weather .
+  ?weather a rtio:PotholeAfterRain .
+
+  ?accident rtio:involvesPerson ?person .
+  ?person rtio:sustainedInjury ?internalInjury .
+  ?internalInjury a rtio:InternalInjury .
+}
+GROUP BY ?weather
+
+
+# Query 4: Which hospitals treat severe head injuries most frequently?
+SELECT ?hospitalName (COUNT(?headInjury) AS ?severeHeadInjuryCount)
+WHERE {
+  ?person rtio:treatedAt ?hospital ;
+          rtio:sustainedInjury ?headInjury .
+
+  ?headInjury a rtio:HeadInjury_Severe .
+  ?hospital rtio:hasFacilityName ?hospitalName .
+}
+GROUP BY ?hospitalName
+ORDER BY DESC(?severeHeadInjuryCount)
+
+
+# Query 5: Are urban roads more prone to specific injury types?
+SELECT ?locationName ?injuryType (COUNT(?injury) AS ?injuryCount)
+WHERE {
+  ?accident rtio:occurredAt ?location .
+  ?location a rtio:Urban ;
+            rtio:hasLocationName ?locationName .
+
+  ?accident rtio:involvesPerson ?person .
+  ?person rtio:sustainedInjury ?injury .
+  ?injury rtio:hasType ?injuryType .
+}
+GROUP BY ?locationName ?injuryType
+ORDER BY DESC(?injuryCount)
+
+
+# Query 6: Which emergency units respond to critical injuries?
+SELECT ?unitName ?injuryType (COUNT(?accident) AS ?responseCount)
+WHERE {
+  ?accident rtio:respondedBy ?unit .
+  ?unit rtio:hasFacilityName ?unitName .
+
+  ?accident rtio:involvesPerson ?person .
+  ?person rtio:sustainedInjury ?injury .
+  ?injury a rtio:InternalInjury_Critical .
+}
+GROUP BY ?unitName ?injuryType
+ORDER BY DESC(?responseCount)
+
+
+# Query 7: Are lacerations more common under poor visibility?
+SELECT ?injuryType (COUNT(?injury) AS ?lacerationCount)
+WHERE {
+  ?accident rtio:underCondition rtio:PoorVisibility .
+  ?accident rtio:involvesPerson ?person .
+  ?person rtio:sustainedInjury ?injury .
+  ?injury rtio:hasType ?injuryType .
+}
+FILTER (?injuryType = "Laceration")
+ORDER BY DESC(?lacerationCount)
+
+
+# Query 8: Which locations are linked to fractures?
+SELECT ?locationName (COUNT(?fracture) AS ?fractureCount)
+WHERE {
+  ?accident rtio:occurredAt ?location .
+  ?location rtio:hasLocationName ?locationName .
+
+  ?accident rtio:involvesPerson ?person .
+  ?person rtio:sustainedInjury ?fracture .
+  ?fracture a rtio:Fracture .
+}
+GROUP BY ?locationName
+ORDER BY DESC(?fractureCount)
+
+
+# Query 9: How does time of day affect accident outcomes?
+SELECT ?timeLabel ?injuryType (COUNT(?accident) AS ?accidentCount)
+WHERE {
+  ?accident rtio:happenedOn ?time .
+  ?time rdfs:label ?timeLabel .
+
+  ?accident rtio:involvesPerson ?person .
+  ?person rtio:sustainedInjury ?injury .
+  ?injury rtio:hasType ?injuryType .
+}
+GROUP BY ?timeLabel ?injuryType
+ORDER BY DESC(?accidentCount)
+
+
+# Query 10: What is the gender distribution among injured individuals?
+SELECT ?gender (COUNT(?person) AS ?injuredCount)
+WHERE {
+  ?person a rtio:Person ;
+          rtio:hasGender ?gender .
+}
+GROUP BY ?gender
+ORDER BY DESC(?injuredCount)
+
+
+# Query 11: Are certain occupations more at risk?
+SELECT ?occupation (COUNT(?person) AS ?injuredCount)
+WHERE {
+  ?person a rtio:Person ;
+          rtio:hasOccupation ?occupation .
+}
+GROUP BY ?occupation
+ORDER BY DESC(?injuredCount)
+
+
+# Query 12: Do high-risk areas see more accidents?
+SELECT ?locationName ?highRisk (COUNT(?accident) AS ?accidentCount)
+WHERE {
+  ?accident rtio:occurredAt ?location .
+  ?location a ?locationType ;
+            rtio:isHighRiskArea ?highRisk ;
+            rtio:hasLocationName ?locationName .
+}
+FILTER (?highRisk = true)
+GROUP BY ?locationName ?highRisk
+ORDER BY DESC(?accidentCount)
+
+
+# Query 13: Which accidents involved poor visibility?
+SELECT ?accidentID ?injuryType
+WHERE {
+  ?accident a rtio:TrafficAccident ;
+            rtio:underCondition rtio:PoorVisibility ;
+            rtio:involvesPerson ?person .
+
+  ?person rtio:sustainedInjury ?injury .
+  ?injury rtio:hasType ?injuryType .
+
+  BIND(STRAFTER(STR(?accident), "http://www.example.org/rtio#") AS ?accidentID)
+}
+
+
+# Query 14: Which health facilities accept NHIS and treat critical injuries?
+SELECT ?facilityName ?acceptsNHIS (COUNT(?injury) AS ?criticalInjuriesTreated)
+WHERE {
+  ?person rtio:sustainedInjury ?injury ;
+          rtio:treatedAt ?facility .
+
+  ?injury a rtio:InternalInjury_Critical .
+
+  ?facility rtio:hasFacilityName ?facilityName ;
+            rtio:acceptsNHIS ?acceptsNHIS .
+}
+GROUP BY ?facilityName ?acceptsNHIS
+ORDER BY DESC(?criticalInjuriesTreated)
+
+
+# Query 15: Morning Rush vs Night Driving – which has more severe injuries?
+SELECT ?timeLabel (COUNT(?injury) AS ?severeInjuryCount)
+WHERE {
+  ?accident rtio:happenedOn ?time .
+  ?time rdfs:label ?timeLabel .
+
+  ?accident rtio:involvesPerson ?person .
+  ?person rtio:sustainedInjury ?injury .
+  ?injury rtio:hasSeverity "Severe" .
+}
+GROUP BY ?timeLabel
+ORDER BY DESC(?severeInjuryCount)
