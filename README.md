@@ -124,4 +124,3 @@ All entities are linked to allow meaningful exploration using:
 ## 🛠️ Tools & Standards Used
 
 - OWL 2 (Web Ontology Language)
-## 📁 Repository Structure
