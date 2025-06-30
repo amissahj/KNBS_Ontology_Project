@@ -1,3 +1,9 @@
+
+
+# KNOWLEDGE BASED SYSTEMS (KNBS) COURSE
+- Ontology Project by **John Amissah**
+- Student number: **22205995**
+
 # Road Traffic Injury Ontology (RTIO)
 
 A semantic knowledge model for road traffic injuries in Ghana, built using the Epidemiological Person–Place–Time (PPT) concept. 
@@ -17,19 +23,6 @@ This ontology is modeled around the **epidemiological triad** of disease causati
 
 
 This ontology models road traffic injuries as a combination of:
-
-Who : Drivers, passengers, pedestrians
-Where : Urban areas, rural zones, highways, junctions
-When : Morning rush, midday, night driving
-Why : Speeding, drunk driving, brake failure, poor visibility
-Under what conditions : Dust haze, pothole after rain, poor visibility
-What injuries occurred : Fracture, head injury, internal injury, laceration (with severity levels)
-How were they treated : Government hospitals, private clinics, faith-based facilities
-Which units responded : MTTD, Ghana Ambulance Services, Fire Department
-
-
-
-
 
 
 ### 1. Person
@@ -93,14 +86,15 @@ Linked to injuries via:
 
 This ontology project on road traffic injuries was modeled to answer these questions
 
-Who : Drivers, passengers, pedestrians
-Where : Urban areas, rural zones, highways, junctions
-When : Morning rush, midday, night driving
-Why : Speeding, drunk driving, brake failure, poor visibility
-Under what conditions : Dust haze, pothole after rain, poor visibility
-What injuries occurred : Fracture, head injury, internal injury, laceration (with severity levels)
-How were they treated : Government hospitals, private clinics, faith-based facilities
-Which units responded : MTTD, Ghana Ambulance Services, Fire Department
+- Who : Drivers, passengers, pedestrians
+- Where : Urban areas, rural zones, highways, junctions
+- When : Morning rush, midday, night driving
+- Why : Speeding, drunk driving, brake failure, poor visibility
+- Under what conditions : Dust haze, pothole after rain, poor visibility
+- What injuries occurred : Fracture, head injury, internal injury, laceration (with severity levels)
+- How were they treated : Government hospitals, private clinics, faith-based facilities
+- Which units responded : MTTD, Ghana Ambulance Services, Fire Department
+
 
 
 
