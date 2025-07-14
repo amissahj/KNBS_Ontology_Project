@@ -1,0 +1,1162 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.example.org/rtio"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.example.org/rtio"
+     versionIRI="http://www.example.org/rtio/version/2.0">
+    <Prefix name="" IRI="http://www.example.org/rtio#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="rtio" IRI="http://www.example.org/rtio#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Road Traffic Injury Ontology - Epidemiological Framework</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>2.0 - Epidemiological Person-Place-Time Structure</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AccidentTiming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bicycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrakeFailure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CausalTiming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrunkDriving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrySeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DustHaze"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmergencyResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmergencyResponseTiming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentalCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FaithBasedHospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fire_Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fracture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fracture_Severe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GhanaAmbulanceServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentHospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeadInjury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeadInjury_Severe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighPriorityPatient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRiskDriver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRiskLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Highway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanFactorCause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InjuryType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalInjury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalInjury_Critical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalInjury_Moderate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Junction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laceration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laceration_Deep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laceration_Shallow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LifeThreateningInjury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MTTD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mdry_DustHaze_Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mdry_PoorVisibility_Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicalCause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Midday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MorningRush"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motorcycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NightDriving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paramedics_Ambulance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passenger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pedestrian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonDemographics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonHealthOutcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoorVisibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PotholeAfterRain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PriorityInvestigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivateHospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RainySeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rainy_Pothole_Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecklessDriving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoadSafetyContext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoadTrafficEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoadTrafficInjuries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roundabout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RuralArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeasonalFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speeding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrafficAccident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrafficParticipant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Truck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisibilityCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VulnerableRoadUser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesToTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesToWeather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedInjury"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedInjuryType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#handledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#happenedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAgeGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContext"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOccupation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVisibilityCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvedInAccident"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvedInAccidentWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesPerson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesVehicle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occurredAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operatesVehicle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#respondedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ridesInVehicle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sustainedInjury"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treatedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#underCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#acceptsNHIS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#distanceFromUrbanCenter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAccidentName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasActualTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFacilityName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLocationName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSeverity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isHighRiskArea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#requiresImmediateCare"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#responseTimeMinutes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Accident_at_Circle_0815"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Accident_at_Ejisu_0730"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Accident_at_Nkawkaw_1245"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Accident_at_TechJunction_2115"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Accident_at_TemaMotorway_1420"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Akosua"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AkuffoAddo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bicycle1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bike1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BrakeFailure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bus1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CarA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DrunkDriving"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DustHaze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ejisu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fire_Department"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fracture_Severe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GhanaAmbulanceServices"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GhanaFireServices"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HeadInjury_Severe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HolyFamily"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InternalInjury_Critical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InternalInjury_Moderate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KATH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kojo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KomfoAnokye"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kwame"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laceration_Deep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laceration_Shallow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MTTD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mdry_DustHaze_Context"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mdry_PoorVisibility_Context"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MorningRush"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NightDriving"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nkawkaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nyaho"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paramedics_Ambulance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PoorVisibility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PotholeAfterRain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rainy_Pothole_Context"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecklessDriving"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Speeding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StDominic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TechJunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TemaMotorway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Time001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Time002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Time003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Time004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Time005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Truck1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#37Hospital"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#HighRiskDriver"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Driver"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#involvedInAccidentWith"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCause"/>
+                    <Class IRI="#HumanFactorCause"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HighRiskLocation"/>
+        <ObjectUnionOf>
+            <Class IRI="#Highway"/>
+            <Class IRI="#Roundabout"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Junction"/>
+                <Class IRI="#UrbanArea"/>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LifeThreateningInjury"/>
+        <ObjectUnionOf>
+            <Class IRI="#Fracture_Severe"/>
+            <Class IRI="#HeadInjury_Severe"/>
+            <Class IRI="#InternalInjury_Critical"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VulnerableRoadUser"/>
+        <ObjectUnionOf>
+            <Class IRI="#Pedestrian"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Driver"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#operatesVehicle"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#Bicycle"/>
+                        <Class IRI="#Motorcycle"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AccidentTiming"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <Class IRI="#VehicleType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrakeFailure"/>
+        <Class IRI="#MechanicalCause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#VehicleType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#VehicleType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CausalTiming"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Driver"/>
+        <Class IRI="#TrafficParticipant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Driver"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#operatesVehicle"/>
+            <Class IRI="#VehicleType"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrunkDriving"/>
+        <Class IRI="#HumanFactorCause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrySeason"/>
+        <Class IRI="#SeasonalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DustHaze"/>
+        <Class IRI="#DrySeason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmergencyResponse"/>
+        <Class IRI="#EmergencyResponseTiming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmergencyResponseTiming"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalCondition"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FaithBasedHospital"/>
+        <Class IRI="#HealthFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fire_Department"/>
+        <Class IRI="#EmergencyResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fracture"/>
+        <Class IRI="#InjuryType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fracture_Severe"/>
+        <Class IRI="#Fracture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GhanaAmbulanceServices"/>
+        <Class IRI="#EmergencyResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentHospital"/>
+        <Class IRI="#HealthFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentHospital"/>
+        <DataHasValue>
+            <DataProperty IRI="#acceptsNHIS"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeadInjury"/>
+        <Class IRI="#InjuryType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeadInjury_Severe"/>
+        <Class IRI="#HeadInjury"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeadInjury_Severe"/>
+        <DataHasValue>
+            <DataProperty IRI="#requiresImmediateCare"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthFacility"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighPriorityPatient"/>
+        <Class IRI="#RoadTrafficEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRiskLocation"/>
+        <Class IRI="#RoadTrafficEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Highway"/>
+        <Class IRI="#IncidentLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanFactorCause"/>
+        <Class IRI="#CausalTiming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncidentLocation"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InjuryType"/>
+        <Class IRI="#PersonHealthOutcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalInjury"/>
+        <Class IRI="#InjuryType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalInjury_Critical"/>
+        <Class IRI="#InternalInjury"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalInjury_Critical"/>
+        <DataHasValue>
+            <DataProperty IRI="#requiresImmediateCare"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalInjury_Moderate"/>
+        <Class IRI="#InternalInjury"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Junction"/>
+        <Class IRI="#IncidentLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laceration"/>
+        <Class IRI="#InjuryType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laceration_Deep"/>
+        <Class IRI="#Laceration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laceration_Shallow"/>
+        <Class IRI="#Laceration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LifeThreateningInjury"/>
+        <Class IRI="#RoadTrafficEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MTTD"/>
+        <Class IRI="#EmergencyResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mdry_DustHaze_Context"/>
+        <Class IRI="#RoadSafetyContext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mdry_PoorVisibility_Context"/>
+        <Class IRI="#RoadSafetyContext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicalCause"/>
+        <Class IRI="#CausalTiming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Midday"/>
+        <Class IRI="#AccidentTiming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MorningRush"/>
+        <Class IRI="#AccidentTiming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorcycle"/>
+        <Class IRI="#VehicleType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NightDriving"/>
+        <Class IRI="#AccidentTiming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paramedics_Ambulance"/>
+        <Class IRI="#EmergencyResponse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passenger"/>
+        <Class IRI="#TrafficParticipant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passenger"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#operatesVehicle"/>
+                <Class IRI="#VehicleType"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pedestrian"/>
+        <Class IRI="#TrafficParticipant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pedestrian"/>
+        <ObjectComplementOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#operatesVehicle"/>
+                    <Class IRI="#VehicleType"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#ridesInVehicle"/>
+                    <Class IRI="#VehicleType"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#RoadTrafficInjuries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonDemographics"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonHealthOutcome"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <Class IRI="#RoadTrafficInjuries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoorVisibility"/>
+        <Class IRI="#VisibilityCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PotholeAfterRain"/>
+        <Class IRI="#RainySeason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PriorityInvestigation"/>
+        <Class IRI="#RoadTrafficEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivateHospital"/>
+        <Class IRI="#HealthFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RainySeason"/>
+        <Class IRI="#SeasonalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rainy_Pothole_Context"/>
+        <Class IRI="#RoadSafetyContext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecklessDriving"/>
+        <Class IRI="#HumanFactorCause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadSafetyContext"/>
+        <Class IRI="#RoadTrafficInjuries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadTrafficEvent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadTrafficInjuries"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roundabout"/>
+        <Class IRI="#IncidentLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuralArea"/>
+        <Class IRI="#IncidentLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeasonalFactor"/>
+        <Class IRI="#EnvironmentalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speeding"/>
+        <Class IRI="#HumanFactorCause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time"/>
+        <Class IRI="#RoadTrafficInjuries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrafficAccident"/>
+        <Class IRI="#RoadTrafficEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrafficAccident"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#happenedOn"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrafficAccident"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#involvesPerson"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrafficAccident"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#occurredAt"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrafficParticipant"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Truck"/>
+        <Class IRI="#VehicleType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrbanArea"/>
+        <Class IRI="#IncidentLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicleType"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisibilityCondition"/>
+        <Class IRI="#EnvironmentalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VulnerableRoadUser"/>
+        <Class IRI="#RoadTrafficEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#TrafficAccident"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#occurredAt"/>
+                <Class IRI="#HighRiskLocation"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Class IRI="#PriorityInvestigation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#TrafficParticipant"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sustainedInjury"/>
+                <Class IRI="#LifeThreateningInjury"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Class IRI="#HighPriorityPatient"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Driver"/>
+        <Class IRI="#Passenger"/>
+        <Class IRI="#Pedestrian"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fracture"/>
+        <Class IRI="#HeadInjury"/>
+        <Class IRI="#InternalInjury"/>
+        <Class IRI="#Laceration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Midday"/>
+        <Class IRI="#MorningRush"/>
+        <Class IRI="#NightDriving"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RuralArea"/>
+        <Class IRI="#UrbanArea"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#TrafficAccident"/>
+        <NamedIndividual IRI="#Accident_at_Circle_0815"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrafficAccident"/>
+        <NamedIndividual IRI="#Accident_at_Ejisu_0730"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrafficAccident"/>
+        <NamedIndividual IRI="#Accident_at_Nkawkaw_1245"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrafficAccident"/>
+        <NamedIndividual IRI="#Accident_at_TechJunction_2115"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrafficAccident"/>
+        <NamedIndividual IRI="#Accident_at_TemaMotorway_1420"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Passenger"/>
+        <NamedIndividual IRI="#Akosua"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Driver"/>
+        <NamedIndividual IRI="#AkuffoAddo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Passenger"/>
+        <NamedIndividual IRI="#Ama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bicycle"/>
+        <NamedIndividual IRI="#Bicycle1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Motorcycle"/>
+        <NamedIndividual IRI="#Bike1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bus"/>
+        <NamedIndividual IRI="#Bus1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Car"/>
+        <NamedIndividual IRI="#CarA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UrbanArea"/>
+        <NamedIndividual IRI="#Circle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RuralArea"/>
+        <NamedIndividual IRI="#Ejisu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fire_Department"/>
+        <NamedIndividual IRI="#Fire_Department"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GhanaAmbulanceServices"/>
+        <NamedIndividual IRI="#GhanaAmbulanceServices"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fire_Department"/>
+        <NamedIndividual IRI="#GhanaFireServices"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FaithBasedHospital"/>
+        <NamedIndividual IRI="#HolyFamily"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentHospital"/>
+        <NamedIndividual IRI="#KATH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pedestrian"/>
+        <NamedIndividual IRI="#Kojo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Driver"/>
+        <NamedIndividual IRI="#KomfoAnokye"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Driver"/>
+        <NamedIndividual IRI="#Kwame"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MTTD"/>
+        <NamedIndividual IRI="#MTTD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mdry_DustHaze_Context"/>
+        <NamedIndividual IRI="#Mdry_DustHaze_Context"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mdry_PoorVisibility_Context"/>
+        <NamedIndividual IRI="#Mdry_PoorVisibility_Context"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UrbanArea"/>
+        <NamedIndividual IRI="#Nkawkaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivateHospital"/>
+        <NamedIndividual IRI="#Nyaho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paramedics_Ambulance"/>
+        <NamedIndividual IRI="#Paramedics_Ambulance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rainy_Pothole_Context"/>
+        <NamedIndividual IRI="#Rainy_Pothole_Context"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FaithBasedHospital"/>
+        <NamedIndividual IRI="#StDominic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Junction"/>
+        <NamedIndividual IRI="#TechJunction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Highway"/>
+        <NamedIndividual IRI="#TemaMotorway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MorningRush"/>
+        <NamedIndividual IRI="#Time001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Midday"/>
+        <NamedIndividual IRI="#Time002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Midday"/>
+        <NamedIndividual IRI="#Time003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MorningRush"/>
+        <NamedIndividual IRI="#Time004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NightDriving"/>
+        <NamedIndividual IRI="#Time005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Truck"/>
+        <NamedIndividual IRI="#Truck1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Driver"/>
+        <NamedIndividual IRI="#Yaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentHospital"/>
+        <NamedIndividual IRI="#37Hospital"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#happenedOn"/>
+        <Class IRI="#TrafficAccident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesPerson"/>
+        <Class IRI="#TrafficAccident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occurredAt"/>
+        <Class IRI="#TrafficAccident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#happenedOn"/>
+        <Class IRI="#AccidentTiming"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesPerson"/>
+        <Class IRI="#TrafficParticipant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#occurredAt"/>
+        <Class IRI="#IncidentLocation"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
