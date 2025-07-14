@@ -12,7 +12,7 @@ An epidemiological framework ontology for analyzing road traffic injuries in Gha
 - **Programme**: GLOBAL PUBLIC HEALTH
 - **Academic Year**: SUMMER SEMESTER,2025
 - **Course Professor**: PROF. DR. DOMINIK BÖHLER
-**Date**: 14.07.2025
+- **Date**: 14.07.2025
 
 
 **Project Details:**: Road Traffic Injury Ontology Development
