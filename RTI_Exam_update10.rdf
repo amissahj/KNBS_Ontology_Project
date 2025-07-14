@@ -1,0 +1,1486 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.org/rtio#"
+     xml:base="http://www.example.org/rtio"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rtio="http://www.example.org/rtio#">
+    <owl:Ontology rdf:about="http://www.example.org/rtio">
+        <owl:versionIRI rdf:resource="http://www.example.org/rtio/version/2.0"/>
+        <rdfs:label>Road Traffic Injury Ontology - Epidemiological Framework</rdfs:label>
+        <owl:versionInfo>2.0 - Epidemiological Person-Place-Time Structure</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/rtio#appliesToTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#appliesToTime"/>
+    
+
+
+    <!-- http://www.example.org/rtio#appliesToWeather -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#appliesToWeather"/>
+    
+
+
+    <!-- http://www.example.org/rtio#associatedInjury -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#associatedInjury"/>
+    
+
+
+    <!-- http://www.example.org/rtio#associatedInjuryType -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#associatedInjuryType"/>
+    
+
+
+    <!-- http://www.example.org/rtio#handledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#handledBy"/>
+    
+
+
+    <!-- http://www.example.org/rtio#happenedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#happenedOn">
+        <rdfs:domain rdf:resource="http://www.example.org/rtio#TrafficAccident"/>
+        <rdfs:range rdf:resource="http://www.example.org/rtio#AccidentTiming"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/rtio#hasAgeGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#hasAgeGroup"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasCause -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#hasCause"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#hasContext"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasOccupation -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#hasOccupation"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasVisibilityCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#hasVisibilityCondition"/>
+    
+
+
+    <!-- http://www.example.org/rtio#involvedInAccident -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#involvedInAccident"/>
+    
+
+
+    <!-- http://www.example.org/rtio#involvedInAccidentWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#involvedInAccidentWith"/>
+    
+
+
+    <!-- http://www.example.org/rtio#involvesPerson -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#involvesPerson">
+        <rdfs:domain rdf:resource="http://www.example.org/rtio#TrafficAccident"/>
+        <rdfs:range rdf:resource="http://www.example.org/rtio#TrafficParticipant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/rtio#involvesVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#involvesVehicle"/>
+    
+
+
+    <!-- http://www.example.org/rtio#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#locatedIn"/>
+    
+
+
+    <!-- http://www.example.org/rtio#occurredAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#occurredAt">
+        <rdfs:domain rdf:resource="http://www.example.org/rtio#TrafficAccident"/>
+        <rdfs:range rdf:resource="http://www.example.org/rtio#IncidentLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/rtio#operatesVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#operatesVehicle"/>
+    
+
+
+    <!-- http://www.example.org/rtio#respondedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#respondedBy"/>
+    
+
+
+    <!-- http://www.example.org/rtio#ridesInVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#ridesInVehicle"/>
+    
+
+
+    <!-- http://www.example.org/rtio#sustainedInjury -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#sustainedInjury"/>
+    
+
+
+    <!-- http://www.example.org/rtio#treatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#treatedAt"/>
+    
+
+
+    <!-- http://www.example.org/rtio#underCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/rtio#underCondition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/rtio#acceptsNHIS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#acceptsNHIS"/>
+    
+
+
+    <!-- http://www.example.org/rtio#distanceFromUrbanCenter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#distanceFromUrbanCenter"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasAccidentName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#hasAccidentName"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasActualTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#hasActualTime"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#hasAge"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasFacilityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#hasFacilityName"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#hasGender"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasLocationName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#hasLocationName"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#hasName"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasSeverity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#hasSeverity"/>
+    
+
+
+    <!-- http://www.example.org/rtio#hasType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#hasType"/>
+    
+
+
+    <!-- http://www.example.org/rtio#isHighRiskArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#isHighRiskArea"/>
+    
+
+
+    <!-- http://www.example.org/rtio#requiresImmediateCare -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#requiresImmediateCare"/>
+    
+
+
+    <!-- http://www.example.org/rtio#responseTimeMinutes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/rtio#responseTimeMinutes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/rtio#AccidentTiming -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#AccidentTiming">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Bicycle -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Bicycle">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#VehicleType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#BrakeFailure -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#BrakeFailure">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#MechanicalCause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Bus -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#VehicleType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Car -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Car">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#VehicleType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#CausalTiming -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#CausalTiming">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Driver -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Driver">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#TrafficParticipant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/rtio#operatesVehicle"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.org/rtio#VehicleType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#DrunkDriving -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#DrunkDriving">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#HumanFactorCause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#DrySeason -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#DrySeason">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#SeasonalFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#DustHaze -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#DustHaze">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#DrySeason"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#EmergencyResponse -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#EmergencyResponse">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#EmergencyResponseTiming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#EmergencyResponseTiming -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#EmergencyResponseTiming">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#EnvironmentalCondition -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#EnvironmentalCondition">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#FaithBasedHospital -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#FaithBasedHospital">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#HealthFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Fire_Department -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Fire_Department">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#EmergencyResponse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Fracture -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Fracture">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#InjuryType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Fracture_Severe -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Fracture_Severe">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Fracture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#GhanaAmbulanceServices -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#GhanaAmbulanceServices">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#EmergencyResponse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#GovernmentHospital -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#GovernmentHospital">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#HealthFacility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/rtio#acceptsNHIS"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#HeadInjury -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#HeadInjury">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#InjuryType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#HeadInjury_Severe -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#HeadInjury_Severe">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#HeadInjury"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/rtio#requiresImmediateCare"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#HealthFacility -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#HealthFacility">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#HighPriorityPatient -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#HighPriorityPatient">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadTrafficEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#HighRiskDriver -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#HighRiskDriver">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.org/rtio#Driver"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.org/rtio#involvedInAccidentWith"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.example.org/rtio#hasCause"/>
+                                <owl:someValuesFrom rdf:resource="http://www.example.org/rtio#HumanFactorCause"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#HighRiskLocation -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#HighRiskLocation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.org/rtio#Highway"/>
+                    <rdf:Description rdf:about="http://www.example.org/rtio#Roundabout"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.example.org/rtio#Junction"/>
+                            <rdf:Description rdf:about="http://www.example.org/rtio#UrbanArea"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadTrafficEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Highway -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Highway">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#IncidentLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#HumanFactorCause -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#HumanFactorCause">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#CausalTiming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#IncidentLocation -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#IncidentLocation">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#InjuryType -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#InjuryType">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#PersonHealthOutcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#InternalInjury -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#InternalInjury">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#InjuryType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#InternalInjury_Critical -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#InternalInjury_Critical">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#InternalInjury"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/rtio#requiresImmediateCare"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#InternalInjury_Moderate -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#InternalInjury_Moderate">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#InternalInjury"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Junction -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Junction">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#IncidentLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Laceration -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Laceration">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#InjuryType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Laceration_Deep -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Laceration_Deep">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Laceration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Laceration_Shallow -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Laceration_Shallow">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Laceration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#LifeThreateningInjury -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#LifeThreateningInjury">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.org/rtio#Fracture_Severe"/>
+                    <rdf:Description rdf:about="http://www.example.org/rtio#HeadInjury_Severe"/>
+                    <rdf:Description rdf:about="http://www.example.org/rtio#InternalInjury_Critical"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadTrafficEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#MTTD -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#MTTD">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#EmergencyResponse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Mdry_DustHaze_Context -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Mdry_DustHaze_Context">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadSafetyContext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Mdry_PoorVisibility_Context -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Mdry_PoorVisibility_Context">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadSafetyContext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#MechanicalCause -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#MechanicalCause">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#CausalTiming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Midday -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Midday">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#AccidentTiming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#MorningRush -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#MorningRush">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#AccidentTiming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Motorcycle -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Motorcycle">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#VehicleType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#NightDriving -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#NightDriving">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#AccidentTiming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Paramedics_Ambulance -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Paramedics_Ambulance">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#EmergencyResponse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Passenger -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Passenger">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#TrafficParticipant"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.org/rtio#operatesVehicle"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.org/rtio#VehicleType"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Pedestrian -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Pedestrian">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#TrafficParticipant"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.example.org/rtio#operatesVehicle"/>
+                                <owl:someValuesFrom rdf:resource="http://www.example.org/rtio#VehicleType"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.example.org/rtio#ridesInVehicle"/>
+                                <owl:someValuesFrom rdf:resource="http://www.example.org/rtio#VehicleType"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Person -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Person">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadTrafficInjuries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#PersonDemographics -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#PersonDemographics">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#PersonHealthOutcome -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#PersonHealthOutcome">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Place -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Place">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadTrafficInjuries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#PoorVisibility -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#PoorVisibility">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#VisibilityCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#PotholeAfterRain -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#PotholeAfterRain">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RainySeason"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#PriorityInvestigation -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#PriorityInvestigation">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadTrafficEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#PrivateHospital -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#PrivateHospital">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#HealthFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#RainySeason -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#RainySeason">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#SeasonalFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Rainy_Pothole_Context -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Rainy_Pothole_Context">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadSafetyContext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#RecklessDriving -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#RecklessDriving">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#HumanFactorCause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#RoadSafetyContext -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#RoadSafetyContext">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadTrafficInjuries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#RoadTrafficEvent -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#RoadTrafficEvent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#RoadTrafficInjuries -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#RoadTrafficInjuries">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Roundabout -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Roundabout">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#IncidentLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#RuralArea -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#RuralArea">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#IncidentLocation"/>
+        <owl:disjointWith rdf:resource="http://www.example.org/rtio#UrbanArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#SeasonalFactor -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#SeasonalFactor">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#EnvironmentalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Speeding -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Speeding">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#HumanFactorCause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Time -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Time">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadTrafficInjuries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#TrafficAccident -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#TrafficAccident">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadTrafficEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/rtio#happenedOn"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/rtio#involvesPerson"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/rtio#occurredAt"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#TrafficParticipant -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#TrafficParticipant">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#Truck -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#Truck">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#VehicleType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#UrbanArea -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#UrbanArea">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#IncidentLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#VehicleType -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#VehicleType">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#VisibilityCondition -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#VisibilityCondition">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#EnvironmentalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/rtio#VulnerableRoadUser -->
+
+    <owl:Class rdf:about="http://www.example.org/rtio#VulnerableRoadUser">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.org/rtio#Pedestrian"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.example.org/rtio#Driver"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.example.org/rtio#operatesVehicle"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.example.org/rtio#Bicycle"/>
+                                            <rdf:Description rdf:about="http://www.example.org/rtio#Motorcycle"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#RoadTrafficEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/rtio#Accident_at_Circle_0815 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Accident_at_Circle_0815">
+        <rdf:type rdf:resource="http://www.example.org/rtio#TrafficAccident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Accident_at_Ejisu_0730 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Accident_at_Ejisu_0730">
+        <rdf:type rdf:resource="http://www.example.org/rtio#TrafficAccident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Accident_at_Nkawkaw_1245 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Accident_at_Nkawkaw_1245">
+        <rdf:type rdf:resource="http://www.example.org/rtio#TrafficAccident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Accident_at_TechJunction_2115 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Accident_at_TechJunction_2115">
+        <rdf:type rdf:resource="http://www.example.org/rtio#TrafficAccident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Accident_at_TemaMotorway_1420 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Accident_at_TemaMotorway_1420">
+        <rdf:type rdf:resource="http://www.example.org/rtio#TrafficAccident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Akosua -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Akosua">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Passenger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#AkuffoAddo -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#AkuffoAddo">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Driver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Ama -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Ama">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Passenger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Bicycle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Bicycle1">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Bicycle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Bike1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Bike1">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Motorcycle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#BrakeFailure -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#BrakeFailure"/>
+    
+
+
+    <!-- http://www.example.org/rtio#Bus1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Bus1">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Bus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#CarA -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#CarA">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Car"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Circle -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Circle">
+        <rdf:type rdf:resource="http://www.example.org/rtio#UrbanArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#DrunkDriving -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#DrunkDriving"/>
+    
+
+
+    <!-- http://www.example.org/rtio#DustHaze -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#DustHaze"/>
+    
+
+
+    <!-- http://www.example.org/rtio#Ejisu -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Ejisu">
+        <rdf:type rdf:resource="http://www.example.org/rtio#RuralArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Fire_Department -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Fire_Department">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Fire_Department"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Fracture_Severe -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Fracture_Severe"/>
+    
+
+
+    <!-- http://www.example.org/rtio#GhanaAmbulanceServices -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#GhanaAmbulanceServices">
+        <rdf:type rdf:resource="http://www.example.org/rtio#GhanaAmbulanceServices"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#GhanaFireServices -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#GhanaFireServices">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Fire_Department"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#HeadInjury_Severe -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#HeadInjury_Severe"/>
+    
+
+
+    <!-- http://www.example.org/rtio#HolyFamily -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#HolyFamily">
+        <rdf:type rdf:resource="http://www.example.org/rtio#FaithBasedHospital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#InternalInjury_Critical -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#InternalInjury_Critical"/>
+    
+
+
+    <!-- http://www.example.org/rtio#InternalInjury_Moderate -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#InternalInjury_Moderate"/>
+    
+
+
+    <!-- http://www.example.org/rtio#KATH -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#KATH">
+        <rdf:type rdf:resource="http://www.example.org/rtio#GovernmentHospital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Kojo -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Kojo">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Pedestrian"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#KomfoAnokye -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#KomfoAnokye">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Driver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Kwame -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Kwame">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Driver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Laceration_Deep -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Laceration_Deep"/>
+    
+
+
+    <!-- http://www.example.org/rtio#Laceration_Shallow -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Laceration_Shallow"/>
+    
+
+
+    <!-- http://www.example.org/rtio#MTTD -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#MTTD">
+        <rdf:type rdf:resource="http://www.example.org/rtio#MTTD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Mdry_DustHaze_Context -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Mdry_DustHaze_Context">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Mdry_DustHaze_Context"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Mdry_PoorVisibility_Context -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Mdry_PoorVisibility_Context">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Mdry_PoorVisibility_Context"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#MorningRush -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#MorningRush"/>
+    
+
+
+    <!-- http://www.example.org/rtio#NightDriving -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#NightDriving"/>
+    
+
+
+    <!-- http://www.example.org/rtio#Nkawkaw -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Nkawkaw">
+        <rdf:type rdf:resource="http://www.example.org/rtio#UrbanArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Nyaho -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Nyaho">
+        <rdf:type rdf:resource="http://www.example.org/rtio#PrivateHospital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Paramedics_Ambulance -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Paramedics_Ambulance">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Paramedics_Ambulance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#PoorVisibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#PoorVisibility"/>
+    
+
+
+    <!-- http://www.example.org/rtio#PotholeAfterRain -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#PotholeAfterRain"/>
+    
+
+
+    <!-- http://www.example.org/rtio#Rainy_Pothole_Context -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Rainy_Pothole_Context">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Rainy_Pothole_Context"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#RecklessDriving -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#RecklessDriving"/>
+    
+
+
+    <!-- http://www.example.org/rtio#Speeding -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Speeding"/>
+    
+
+
+    <!-- http://www.example.org/rtio#StDominic -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#StDominic">
+        <rdf:type rdf:resource="http://www.example.org/rtio#FaithBasedHospital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#TechJunction -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#TechJunction">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Junction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#TemaMotorway -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#TemaMotorway">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Highway"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Time001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Time001">
+        <rdf:type rdf:resource="http://www.example.org/rtio#MorningRush"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Time002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Time002">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Midday"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Time003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Time003">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Midday"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Time004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Time004">
+        <rdf:type rdf:resource="http://www.example.org/rtio#MorningRush"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Time005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Time005">
+        <rdf:type rdf:resource="http://www.example.org/rtio#NightDriving"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Truck1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Truck1">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Truck"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#Yaw -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#Yaw">
+        <rdf:type rdf:resource="http://www.example.org/rtio#Driver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/rtio#37Hospital -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/rtio#37Hospital">
+        <rdf:type rdf:resource="http://www.example.org/rtio#GovernmentHospital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.org/rtio#TrafficAccident"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/rtio#occurredAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.example.org/rtio#HighRiskLocation"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#PriorityInvestigation"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.org/rtio#TrafficParticipant"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/rtio#sustainedInjury"/>
+                <owl:someValuesFrom rdf:resource="http://www.example.org/rtio#LifeThreateningInjury"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.example.org/rtio#HighPriorityPatient"/>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.org/rtio#Driver"/>
+            <rdf:Description rdf:about="http://www.example.org/rtio#Passenger"/>
+            <rdf:Description rdf:about="http://www.example.org/rtio#Pedestrian"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.org/rtio#Fracture"/>
+            <rdf:Description rdf:about="http://www.example.org/rtio#HeadInjury"/>
+            <rdf:Description rdf:about="http://www.example.org/rtio#InternalInjury"/>
+            <rdf:Description rdf:about="http://www.example.org/rtio#Laceration"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.org/rtio#Midday"/>
+            <rdf:Description rdf:about="http://www.example.org/rtio#MorningRush"/>
+            <rdf:Description rdf:about="http://www.example.org/rtio#NightDriving"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
