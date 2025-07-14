@@ -1,8 +1,7 @@
-# Road Traffic Injury Ontology (RTIO) 🚗💥
+# Road Traffic Injury Ontology (RTIO) 
 
 An epidemiological framework ontology for analyzing road traffic injuries in Ghana with a focus on Person-Place-Time relationships.
 
-## 🎓 Academic Information
 
 **Student Information:**
 - **Student Name**: John Amissah
@@ -15,7 +14,7 @@ An epidemiological framework ontology for analyzing road traffic injuries in Gha
 - **Date**: 14.07.2025
 
 
-**Project Details:**: Road Traffic Injury Ontology Development
+**Project Title:**: Road Traffic Injury Ontology Development
 
 ## 📋 Overview
 
@@ -31,7 +30,7 @@ The Road Traffic Injury Ontology (RTIO) is a semantic model designed to capture 
 - **Emergency response**: Ghana Ambulance Services, MTTD, Fire Department integration
 - **Seasonal factors**: Dry season dust haze and rainy season pothole contexts
 
-## 🏗️ Ontology Structure
+## Ontology Structure
 
 ### Core Classes
 
@@ -88,7 +87,7 @@ VulnerableRoadUser ≡ Pedestrian ⊔ (Driver ⊓ ∃operatesVehicle.(Bicycle �
 3. Explore the class hierarchy and sample individuals
 4. Run the provided SPARQL queries for analysis
 
-## 📊 SPARQL Query Examples
+##  SPARQL Query Examples
 
 This ontology includes **5 comprehensive SPARQL queries** for analytical purposes:
 
@@ -98,7 +97,7 @@ This ontology includes **5 comprehensive SPARQL queries** for analytical purpose
 4. **Injury Severity Analysis** - Treatment priorities and vehicle type correlations
 5. **Seasonal/Environmental Analysis** - Ghana-specific contextual factors
 
-**📂 Full Query Details**: See [`queries/sample-sparql-queries.md`](queries/sample-sparql-queries.md) for complete query syntax, expected results, and usage instructions.
+**Full Query Details**: See [`queries/sample-sparql-queries.md`](queries/sample-sparql-queries.md) for complete query syntax, expected results, and usage instructions.
 
 ### Quick Start Example
 ```sparql
@@ -112,7 +111,7 @@ SELECT ?accident ?location ?timing ?participant WHERE {
 }
 ```
 
-## 🏥 Ghana-Specific Context
+## Ghana-Specific Context
 
 ### Healthcare Facilities Modeled
 - **Government Hospitals**: KATH, 37 Hospital (accept NHIS)
@@ -130,7 +129,7 @@ SELECT ?accident ?location ?timing ?participant WHERE {
 - **Major Highways**: Tema Motorway
 - **High-Risk Locations**: Junctions, roundabouts, highways
 
-## 🎯 Applications
+##  Applications
 
 ### Public Health Research
 - Epidemiological surveillance of traffic injuries in Ghana
@@ -147,7 +146,7 @@ SELECT ?accident ?location ?timing ?participant WHERE {
 - Service coordination improvement
 - Capacity planning for healthcare facilities
 
-## 📈 Data Properties
+##  Data Properties
 
 The ontology includes specific data properties for:
 - `hasAge`, `hasGender`: Demographics
@@ -157,7 +156,7 @@ The ontology includes specific data properties for:
 - `requiresImmediateCare`: Critical injury flagging
 - `distanceFromUrbanCenter`: Geographic accessibility
 
-## 🔬 Research Applications
+## Research Applications
 
 This ontology supports research in:
 - **Traffic epidemiology** in developing countries
@@ -171,9 +170,9 @@ This ontology supports research in:
 - Motor Traffic and Transport Department (MTTD) Guidelines
 - Ghana National Ambulance Service Operations Manual
 
-## 🎯 Future Enhancements (Recommendations)
+## Future Enhancements (Recommendations)
 
-## 📋 Project Deliverables
+## Project Deliverables
 
 ### Submitted Files
 1. **RTI_exam_updated10.owl** - Main ontology file
