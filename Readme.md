@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Road Traffic Injury Ontology (RTIO) 🚗💥
 
 An epidemiological framework ontology for analyzing road traffic injuries in Ghana with a focus on Person-Place-Time relationships.
@@ -20,6 +21,15 @@ An epidemiological framework ontology for analyzing road traffic injuries in Gha
 ## 📋 Overview
 
 The Road Traffic Injury Ontology (RTIO) is a semantic model designed to capture and analyze road traffic accidents and injuries within Ghana's context. The ontology follows an epidemiological framework based on **Person**, **Place**, and **Time** dimensions to provide a structured representation of traffic incidents, their causes, consequences, and emergency response patterns.
+=======
+# Road Traffic Injury Ontology (RTIO)
+
+An epidemiological framework ontology for analyzing road traffic injuries in Ghana with focus on Person-Place-Time relationships.
+
+## Overview
+
+The Road Traffic Injury Ontology (RTIO) is a semantic model designed to capture and analyze road traffic accidents and injuries within Ghana's context. The ontology follows an epidemiological framework based on **Person**, **Place**, and **Time** dimensions to provide structured representation of traffic incidents, their causes, consequences, and emergency response patterns.
+>>>>>>> 051103597e7a658e049de6199de5e335757421f6
 
 ### Key Features
 
@@ -31,23 +41,39 @@ The Road Traffic Injury Ontology (RTIO) is a semantic model designed to capture 
 - **Emergency response**: Ghana Ambulance Services, MTTD, Fire Department integration
 - **Seasonal factors**: Dry season dust haze and rainy season pothole contexts
 
+<<<<<<< HEAD
 ## 🏗️ Ontology Structure
 
 ### Core Classes
 
 #### Person Dimension
+=======
+## Ontology Structure
+
+### Core Classes
+
+#### Person
+>>>>>>> 051103597e7a658e049de6199de5e335757421f6
 - `TrafficParticipant`: Driver, Passenger, Pedestrian (disjoint classes)
 - `PersonDemographics`: Age, gender demographics
 - `InjuryType`: Fracture, HeadInjury, InternalInjury, Laceration (with severity levels)
 - `VulnerableRoadUser`: Pedestrians and motorcycle/bicycle operators
 
+<<<<<<< HEAD
 #### Place Dimension  
+=======
+#### Place   
+>>>>>>> 051103597e7a658e049de6199de5e335757421f6
 - `IncidentLocation`: Highway, Junction, Roundabout, UrbanArea, RuralArea
 - `HealthFacility`: Government (KATH, 37Hospital), Private (Nyaho), Faith-based (HolyFamily, StDominic)
 - `EnvironmentalCondition`: Seasonal factors, visibility conditions
 - `HighRiskLocation`: Highways, Roundabouts, Urban Junctions
 
+<<<<<<< HEAD
 #### Time Dimension
+=======
+#### Time
+>>>>>>> 051103597e7a658e049de6199de5e335757421f6
 - `AccidentTiming`: MorningRush, Midday, NightDriving (disjoint classes)
 - `EmergencyResponseTiming`: Response coordination timing
 - `CausalTiming`: Human factors vs mechanical causes
@@ -81,6 +107,10 @@ HighRiskDriver ≡ Driver ⊓ ∃involvedInAccidentWith.(∃hasCause.HumanFactor
 LifeThreateningInjury ≡ Fracture_Severe ⊔ HeadInjury_Severe ⊔ InternalInjury_Critical
 VulnerableRoadUser ≡ Pedestrian ⊔ (Driver ⊓ ∃operatesVehicle.(Bicycle ⊔ Motorcycle))
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> 051103597e7a658e049de6199de5e335757421f6
 ### Loading the Ontology
 
 1. Download `RTI_exam_updated10.owl`
@@ -88,6 +118,7 @@ VulnerableRoadUser ≡ Pedestrian ⊔ (Driver ⊓ ∃operatesVehicle.(Bicycle �
 3. Explore the class hierarchy and sample individuals
 4. Run the provided SPARQL queries for analysis
 
+<<<<<<< HEAD
 ## 📊 SPARQL Query Examples
 
 This ontology includes **5 comprehensive SPARQL queries** for analytical purposes:
@@ -111,6 +142,8 @@ SELECT ?accident ?location ?timing ?participant WHERE {
     ?accident rtio:involvesPerson ?participant .
 }
 ```
+=======
+>>>>>>> 051103597e7a658e049de6199de5e335757421f6
 
 ## 🏥 Ghana-Specific Context
 
@@ -157,7 +190,11 @@ The ontology includes specific data properties for:
 - `requiresImmediateCare`: Critical injury flagging
 - `distanceFromUrbanCenter`: Geographic accessibility
 
+<<<<<<< HEAD
 ## 🔬 Research Applications
+=======
+## Research Applications
+>>>>>>> 051103597e7a658e049de6199de5e335757421f6
 
 This ontology supports research in:
 - **Traffic epidemiology** in developing countries
@@ -166,6 +203,7 @@ This ontology supports research in:
 - **Policy impact assessment** for road safety interventions
 
 
+<<<<<<< HEAD
 ### Domain Knowledge Sources
 - Ghana Health Service Emergency Response Protocols
 - Motor Traffic and Transport Department (MTTD) Guidelines
@@ -185,3 +223,7 @@ This ontology supports research in:
 ---
 
 **Note**: This is an academic project developed for educational purposes. The ontology contains sample data for demonstration and should not be used for actual emergency response or medical decision-making without proper validation and testing.
+=======
+
+**Note**: This ontology contains sample data for demonstration purposes. For real-world applications, ensure compliance with Ghana's data protection regulations and healthcare privacy requirements.
+>>>>>>> 051103597e7a658e049de6199de5e335757421f6
